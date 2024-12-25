@@ -1,0 +1,65 @@
+/* Styling untuk halaman selamat */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Hanya sembunyikan scroll horizontal jika tidak diperlukan */
+}
+
+/* Container utama untuk konten halaman selamat */
+#congrats-container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    color: #fff;
+    margin-top: 10vh;
+}
+
+/* Styling untuk video agar tampil baik */
+#congrats-video {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling untuk tombol kembali ke awal */
+#restartButton {
+    display: block;
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 3.5s ease-in-out;
+}
+
+#restartButton:hover {
+    background-color: #ff6b6b;
+    transform: scale(1.1);
+}
+
+/* Tambahkan sedikit margin di bawah agar konten tidak terlalu ketat di bagian bawah */
+body {
+    margin-bottom: 20px;
+}
+
+/* Animasi untuk efek muncul */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        #scare-container {
+            text-align: center;
+            max-width: 80%;
+            border: 2px solid #555;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #222;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        #scare-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        #scare-text {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        #retry-button {
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: #555;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #retry-button:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div id="scare-container">
+        <img id="scare-image" src="img/scary.jpeg" alt="Oops! Wrong Answer">
+        <div id="scare-text">Yahaha salah ya,masak gitu doang salah malu laa</div>
+        <button id="retry-button" onclick="window.history.back();">Ulang sini kalau berani</button>
+        <audio src="mp3/scary.mp3" autoplay></audio>
+    </div>
+</body>
+</html>

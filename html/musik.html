@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sambung Musik</title>
+    <link rel="stylesheet" href="css/musik.css">
+</head>
+<body>
+    <div id="main-menu" class="screen">
+        <h1>Sambung Musik</h1>
+        <p id="instructions">
+            Cara bermain:<br>
+            1. Dengarkan potongan lagu yang diputar.<br>
+            2. Lanjutkan lagu dengan menyanyikan bagian berikutnya.<br>
+            3. Tekan tombol "Rekam Jawaban" dan nyanyikan lanjutan lagunya.<br>
+            4. Jika benar, Anda akan mendapatkan poin dan lanjut ke lagu berikutnya.
+        </p>
+        <button id="start-game">Mulai Game</button>
+    </div>
+
+    <div id="game-screen" class="screen" style="display: none;">
+        <div id="current-song"></div>
+        <button id="record">Rekam Jawaban</button>
+        <div id="score">Skor: 0</div>
+        <div id="message" style="display: none;"></div>
+    </div>
+
+    <div id="end-screen" class="screen" style="display: none;">
+        <h2>Selamat!</h2>
+        <p id="final-score"></p>
+        <button id="replay">Ulangi</button>
+        <button id="main-menu-btn">Menu Utama</button>
+    </div>
+
+    <script src="js/musik.js"></script>
+</body>
+</html>

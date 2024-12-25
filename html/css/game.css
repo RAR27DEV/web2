@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1c1c1c 25%, #282828 75%);
+}
+
+/* Styling khusus untuk halaman start */
+#start-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #fff;
+}
+
+#start-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+#start-container p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+#startButton {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#startButton:hover {
+    background-color: #21a1f1;
+    transform: scale(1.1);
+}
+
+/* Animasi untuk efek fade-in */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#quiz-container {
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#question {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.option {
+    display: block;
+    background-color: #444;
+    color: #fff;
+    padding: 15px;
+    margin: 10px auto;
+    width: 80%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.option:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.option:active {
+    background-color: #666;
+    transform: scale(0.95);
+}

@@ -1,0 +1,100 @@
+/* Styling untuk halaman Story Game */
+body {
+    background-color: #2c3e50;
+    font-family: 'Georgia', serif;
+    overflow-x: hidden; /* Mencegah pengguliran horizontal */
+    width: 100%; /* Pastikan body mengambil 100% lebar layar */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+#story-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+#story-image {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: block;
+}
+
+
+#dialog-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    bottom: 0; /* Posisikan di bawah */
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box; /* Pastikan padding dan border tidak menambah lebar total */
+}
+
+#arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    color: #3498db;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+#dialog-text {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+#choices-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+.choice-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    width: 70%; /* Sesuaikan lebar tombol */
+    transition: background-color 0.3s ease;
+}
+
+.choice-button:hover {
+    background-color: #2980b9;
+}
+

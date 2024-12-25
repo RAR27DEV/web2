@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Game</title>
+    <link rel="stylesheet" href="css/tujuan.css">
+</head>
+<body>
+    <div class="container" id="intro-container">
+        <h1>Perjalanan Abadi</h1>
+        <p class="synopsis">Seorang wanita yang di berkahi dengan kehidupan abadi, dan pada akhirnya dia hanya sendirian</p>
+        <a href="#" class="start-button" onclick="startGame()">Mulai Cerita</a>
+    </div>
+
+    <div id="game-container">
+        <button id="sound-toggle" onclick="toggleSound()">🔇</button>
+        <button id="back-button" onclick="previousDialog()">⬅️</button>
+        <div id="image-container">
+            <img id="story-image" src="" alt="Story Image">
+        </div>
+        <div id="dialog-container" onclick="nextDialog()">
+            <p id="dialog-text"></p>
+            <span id="next-arrow" onclick="nextDialog()">➡️</span>
+        </div>
+    </div>
+    
+    <div id="end-dialog" class="modal">
+    <div class="modal-content">
+        <p id="end-message">Cerita telah berakhir.</p>
+        <button onclick="goToMainMenu()">Main Menu</button>
+        <button onclick="restartStory()">Mulai Ulang Cerita</button>
+    </div>
+    </div>
+
+    <audio id="background-music" loop>
+        <source src="mp3/lookback.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="js/tujuan.js"></script>
+</body>
+</html>

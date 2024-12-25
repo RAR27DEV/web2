@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Game</title>
+    <link rel="stylesheet" href="css/story-game.css">
+</head>
+<body>
+    <div id="story-container">
+        <!-- Area untuk gambar -->
+        <img id="story-image" src="" alt="Story Image" style="display: none;">
+
+        <!-- Area untuk teks cerita -->
+        <div id="dialog-box">
+            <p id="dialog-text">Fatur adalah anak yang baik, suatu hari dia tidak sengaja bertemu dengan seseorang saat ingin pergi ke warnet<span id="arrow"> ➔</span></p>
+        </div>
+        
+        <!-- Opsi pilihan muncul setelah dialog -->
+        <div id="choices-container" style="display: none;">
+            <button class="choice-button" onclick="chooseOption('option1')">ADMIIIIIIN!!!</button>
+            <button class="choice-button" onclick="chooseOption('option2')">Tolong dia mungkin kita akan dapat sesuatu</button>
+            <button class="choice-button" onclick="chooseOption('option3')">Ambatukam</button>
+        </div>
+    </div>
+
+    <script src="js/story-game.js"></script>
+</body>
+</html>

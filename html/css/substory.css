@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1c1c1c 25%, #282828 75%);
+}
+
+/* Styling khusus untuk halaman start */
+#start-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: #fff;
+}
+
+/* Styling untuk halaman awal */
+#landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+    background-image: url('background.jpg'); /* Ganti dengan gambar latar belakang yang menarik */
+    background-size: cover;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#landing-container h1 {
+    font-size: 8vw; /* Ukuran font berdasarkan lebar viewport */
+    font-weight: bold;
+    color: #fffff; /* Warna teks */
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90%; /* Batasi lebar teks agar tidak terlalu lebar */
+    line-height: 1.2; /* Jarak antar baris untuk keterbacaan */
+    word-wrap: break-word; /* Pastikan teks terbungkus jika terlalu panjang */
+}
+
+
+#landing-container p {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.option-button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    color: #282c34;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.option-button:hover {
+    background-color: #21a1f1;
+    transform: scale(1.1);
+}
+
+/* Animasi untuk efek fade-in */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
